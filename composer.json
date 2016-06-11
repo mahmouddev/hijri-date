@@ -1,0 +1,17 @@
+{
+    "name": "mahmouddev/hijri-date",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmoud Abdelmoniem",
+            "email": "mogahead@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mahmouddev\\HijriDate\\": "src"
+        }
+    },
+}
