@@ -2,8 +2,6 @@
 
 namespace Mahmouddev\HijriDate;
 
-use Carbon\Carbon;
-
 class HijriDate
 {
     public function Hijri2Greg($day, $month, $year, $string = false)
@@ -39,10 +37,11 @@ class HijriDate
         $date['month'] = (int)$tuData['data']['gregorian']['month']['number'];
         $date['day']   = (int)$tuData['data']['gregorian']['day'];
         
-        if (!$string)
+        if (!$string){
             return $date;
-        else
+        }else{
             return     "{$year}-{$month}-{$day}";
+        }
     }
 
     public function Greg2Hijri($day, $month, $year, $string = false)
@@ -78,17 +77,10 @@ class HijriDate
         $date['month'] = (int)$tuData['data']['hijri']['month']['number'];
         $date['day']   = (int)$tuData['data']['hijri']['day'];
 
-        if (!$string)
+        if (!$string){
             return $date;
-        else
+        }else{
             return     "{$year}-{$month}-{$day}";
-    }
-
-    protected function intPart($float)
-    {
-        if ($float < -0.0000001)
-            return ceil($float - 0.0000001);
-        else
-            return floor($float + 0.0000001);
+        }
     }
 }
