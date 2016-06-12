@@ -1,5 +1,7 @@
 {
     "name": "mahmouddev/hijri-date",
+    "description": "Laravel Hijri date converter.",
+    "keywords": ["laravel", "autocomplete", "helper", "date", "hijri"],
     "license": "MIT",
     "authors": [
         {
@@ -8,10 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=5.4.0",
+    },
     "autoload": {
         "psr-4": {
             "Mahmouddev\\HijriDate\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.1-dev"
         }
     }
 }
