@@ -17,10 +17,5 @@
         "psr-4": {
             "Mahmouddev\\HijriDate\\": "src"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.1-dev"
-        }
     }
 }
